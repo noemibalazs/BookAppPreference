@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BookAppPreference</string>
+
+    <string name="edit_text">Find your loyal friend</string>
+
+    <string name="welcome_text">Welcome! Search for magic and find the truth!</string>
+
+    <string name="describe">In the heart of Italy, Harvard professor of symbology Robert Langdon . . . Dante’s Inferno.</string>
+
+    <string name="book_settings">Book Settings</string>
+
+    <string name="book_date">2015_08_12</string>
+    <string name="book_title">Inferno</string>
+    <string name="book_author">Dan Brown</string>
+
+    <string name="settings_price_label">Minimum Price</string>
+    <string name="settings_price_key" translatable="false">retailPrice</string>
+    <string name="settings_price_default_value" translatable="false">0</string>
+
+    <string name="settings_published_label">Published Date</string>
+    <string name="settings_published_key" translatable="false">publishedDate</string>
+    <string name="settings_published_default_value" translatable="false">2000</string>
+
+    <string name="settings_order_label">Order By</string>
+    <string name="settings_order_key" translatable="false">orderBy</string>
+    <string name="settings_order_default" translatable="false">@string/settings_order_by_price_value</string>
+
+    <string name="settings_order_by_price_label">Price</string>
+    <string name="settings_order_by_published_label">Most Recent</string>
+
+    <string name="settings_order_by_price_value" translatable="false">price</string>
+    <string name="settings_order_by_published_value" translatable="false">published</string>
+
+
+
+
+</resources>

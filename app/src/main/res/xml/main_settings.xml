@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:entries="@array/list_order_by_label"
+        android:entryValues="@array/list_order_by_entries_values"
+        android:defaultValue="@string/settings_order_default"
+        android:key="@string/settings_order_key"
+        android:title="@string/settings_order_label"/>
+
+    <EditTextPreference
+        android:defaultValue="@string/settings_price_default_value"
+        android:key="@string/settings_price_key"
+        android:selectAllOnFocus="true"
+        android:inputType="numberDecimal"
+        android:title="@string/settings_price_label" />
+
+    <EditTextPreference
+        android:defaultValue="@string/settings_published_default_value"
+        android:key="@string/settings_published_key"
+        android:selectAllOnFocus="true"
+        android:inputType="datetime"
+        android:title="@string/settings_published_label" />
+
+
+
+</PreferenceScreen>
