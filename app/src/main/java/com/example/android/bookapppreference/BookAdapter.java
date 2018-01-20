@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 /**
@@ -57,4 +58,5 @@ public class BookAdapter extends ArrayAdapter<Book> {
         DecimalFormat formatPrice = new DecimalFormat("0.00");
         return formatPrice.format(price);
     }
+
 }

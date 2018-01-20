@@ -8,20 +8,6 @@
         android:key="@string/settings_order_key"
         android:title="@string/settings_order_label"/>
 
-    <EditTextPreference
-        android:defaultValue="@string/settings_price_default_value"
-        android:key="@string/settings_price_key"
-        android:selectAllOnFocus="true"
-        android:inputType="numberDecimal"
-        android:title="@string/settings_price_label" />
-
-    <EditTextPreference
-        android:defaultValue="@string/settings_published_default_value"
-        android:key="@string/settings_published_key"
-        android:selectAllOnFocus="true"
-        android:inputType="datetime"
-        android:title="@string/settings_published_label" />
-
 
 
 </PreferenceScreen>

@@ -116,20 +116,16 @@ SharedPreferences.OnSharedPreferenceChangeListener{
         String orderBy = sharedPreferences.getString(getString(R.string.settings_order_key),
                                                      getString(R.string.settings_order_default));
 
-        String price = sharedPreferences.getString(getString(R.string.settings_price_key),
-                                                   getString(R.string.settings_price_default_value));
-
-        String published = sharedPreferences.getString(getString(R.string.settings_published_key),
-                                                       getString(R.string.settings_published_default_value));
 
         String searchBooks = searchText.getText().toString();
         tempLink= "https://www.googleapis.com/books/v1/volumes?q=";
         tempLink = tempLink + searchBooks;
+
         Uri baseUri = Uri.parse(tempLink);
         Uri.Builder builder= baseUri.buildUpon();
-        builder.appendQueryParameter("orderby", orderBy);
-        builder.appendQueryParameter("amount", price);
-        builder.appendQueryParameter("publishedDate", published);
+
+        builder.appendQueryParameter("orderBy", orderBy);
+        builder.appendQueryParameter("printType", "all");
 
         return new BookLoader(this, builder.toString());
     }
@@ -171,9 +167,7 @@ SharedPreferences.OnSharedPreferenceChangeListener{
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if (key.equals(getString(R.string.settings_order_key))||
-                key.equals(getString(R.string.settings_price_key))||
-                key.equals(getString(R.string.settings_published_key))){
+        if (key.equals(getString(R.string.settings_order_key))){
             mAdapter.clear();
             mEmptyTextView.setVisibility(View.GONE);
             mProgressBar.setVisibility(View.VISIBLE);

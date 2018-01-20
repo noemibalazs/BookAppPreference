@@ -5,6 +5,7 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -22,11 +23,8 @@ public class SettingsActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.main_settings);
 
-            Preference price = findPreference(getString(R.string.settings_price_key));
-            Preference published = findPreference(getString(R.string.settings_published_key));
+
             Preference orderBy = findPreference(getString(R.string.settings_order_key));
-            bindPreferenceSummeryToValue(price);
-            bindPreferenceSummeryToValue(published);
             bindPreferenceSummeryToValue(orderBy);
 
         }
