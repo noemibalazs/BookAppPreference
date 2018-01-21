@@ -9,5 +9,4 @@
         android:title="@string/settings_order_label"/>
 
 
-
 </PreferenceScreen>
