@@ -57,7 +57,7 @@ SharedPreferences.OnSharedPreferenceChangeListener{
         ImageView searchButton = findViewById(R.id.search);
 
 
-        mAdapter = new BookAdapter(this, new ArrayList<Book>());
+        mAdapter = new BookAdapter(this, new ArrayList<Book>() );
         listView.setAdapter(mAdapter);
 
         searchButton.setOnClickListener(new View.OnClickListener() {
@@ -78,8 +78,6 @@ SharedPreferences.OnSharedPreferenceChangeListener{
                     mProgressBar.setVisibility(view.VISIBLE);
                     LoaderManager loaderManager = getLoaderManager();
                     loaderManager.restartLoader(BOOK_LOADER_ID, null, MainActivity.this);}
-
-
             }
         });
 

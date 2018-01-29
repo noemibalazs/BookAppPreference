@@ -23,7 +23,6 @@ public class SettingsActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.main_settings);
 
-
             Preference orderBy = findPreference(getString(R.string.settings_order_key));
             bindPreferenceSummeryToValue(orderBy);
 
